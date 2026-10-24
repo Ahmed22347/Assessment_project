@@ -67,7 +67,7 @@ The app works with no environment variables. Calls are browsable and manual revi
 3. **Settings → Environment Variables:** add every variable above for Production (and Preview if wanted), then redeploy.
 4. Open `/api/health` on the deployment. It should report `openai: true` and `github: true`.
 
-Data commits go straight to `main`. `vercel.json`'s `ignoreCommand` skips a rebuild when a commit only touches `reviews/` or `data/uploaded-calls/`, because that data is read live from the GitHub API and doesn't need a redeploy. If the ignore step can't run (e.g. a shallow clone), Vercel simply builds, which is harmless.
+Data commits go straight to `main`. `vercel.json` runs `scripts/vercel-ignore.sh` as Vercel's ignored-build step. It skips a rebuild when a commit only touches `reviews/` or `data/uploaded-calls/`, because that data is read live from the GitHub API and doesn't need a redeploy. When there is no parent commit, or git errors, the script builds.
 
 ## Batch checking the existing calls
 
