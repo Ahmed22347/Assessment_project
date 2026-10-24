@@ -1,0 +1,51 @@
+{
+  "callId": "CALL-015",
+  "ai": {
+    "recommendation": "needs_correction",
+    "confidence": "high",
+    "overallExplanation": "The summary omits the agent’s explicit warning about the risk of further action. It also presents the requested callback and I&E assessment as arranged, although the agent said a call could be requested and noted that an exact time could not be promised.",
+    "findings": [
+      {
+        "category": "third_party_or_authority",
+        "severity": "high",
+        "certainty": "definite",
+        "summaryClaim": "",
+        "transcriptEvidence": [
+          {
+            "turnId": "T13",
+            "quote": "I do need to explain that the account is at risk of further action if the arrears remain unresolved.",
+            "verified": true
+          }
+        ],
+        "explanation": "The agent explicitly warned that the account was at risk of further action. The rubric requires this warning to be stated in the summary.",
+        "suggestedCorrection": "Include that the customer was warned of the risk of further action if the arrears remain unresolved."
+      },
+      {
+        "category": "next_steps",
+        "severity": "medium",
+        "certainty": "definite",
+        "summaryClaim": "An I&E assessment was arranged",
+        "transcriptEvidence": [
+          {
+            "turnId": "T13",
+            "quote": "We can request a call for the twenty-second of October after six.",
+            "verified": true
+          },
+          {
+            "turnId": "T21",
+            "quote": "We can't promise an exact call time, but it helps us plan.",
+            "verified": true
+          }
+        ],
+        "explanation": "The agent said a callback could be requested and noted the customer's preference, but did not confirm a guaranteed appointment. The summary overstates this as an arranged assessment and call.",
+        "suggestedCorrection": "State that a call was requested for 22 October after 6 pm, with no exact time guaranteed, for the next step of discussing the I&E assessment."
+      }
+    ],
+    "suggestedSummary": "DPA completed. The company called and reached the customer, and arrears were discussed. The customer lost an evening cleaning job, reducing monthly income by £250, while continuing their daytime job. The customer was willing to complete an I&E assessment and prepare bank statements, bills and remaining income and essential cost figures; they were warned of the risk of further action if the arrears remain unresolved and confirmed understanding that the assessment does not clear the missed payments. A call was requested for 22 October after 6 pm, but an exact call time was not guaranteed; no payment amount was agreed.",
+    "model": "gpt-6-luna",
+    "analysedAt": "2026-10-24T10:09:12.024Z",
+    "warnings": []
+  },
+  "human": null,
+  "updatedAt": "2026-10-24T10:09:12.024Z"
+}
