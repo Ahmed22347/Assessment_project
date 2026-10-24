@@ -1,0 +1,61 @@
+{
+  "callId": "CALL-017",
+  "ai": {
+    "recommendation": "needs_correction",
+    "confidence": "high",
+    "overallExplanation": "The summary gives the wrong duration for the collection contact hold, which could mislead a colleague about the action applied. It also omits the bereavement and frozen joint account that explain the missed payment and the customer's vulnerability.",
+    "findings": [
+      {
+        "category": "contradiction",
+        "severity": "high",
+        "certainty": "definite",
+        "summaryClaim": "A thirty-day hold on collection contact was applied",
+        "transcriptEvidence": [
+          {
+            "turnId": "T13",
+            "quote": "We can put a fourteen-day hold on collection contact while you deal with the bank and seek advice.",
+            "verified": true
+          },
+          {
+            "turnId": "T19",
+            "quote": "I've applied the fourteen-day contact hold.",
+            "verified": true
+          }
+        ],
+        "explanation": "The agent applied a fourteen-day hold, not a thirty-day hold.",
+        "suggestedCorrection": "A fourteen-day hold on collection contact was applied."
+      },
+      {
+        "category": "hardship_detail",
+        "severity": "medium",
+        "certainty": "definite",
+        "summaryClaim": "",
+        "transcriptEvidence": [
+          {
+            "turnId": "T06",
+            "quote": "My mam died last month and it's just been one thing after another.",
+            "verified": true
+          },
+          {
+            "turnId": "T08",
+            "quote": "Bank's frozen it while they sort the paperwork after the bereavement.",
+            "verified": true
+          },
+          {
+            "turnId": "T08",
+            "quote": "I'd put the car money in the joint one already.",
+            "verified": true
+          }
+        ],
+        "explanation": "The summary omits the specific circumstances behind the missed instalment: the customer's mother died, the joint account containing the car money was frozen while the bank processed paperwork, and the funds were inaccessible.",
+        "suggestedCorrection": "State that the customer's mother died and the bank froze the joint account containing the car money while it processed bereavement paperwork."
+      }
+    ],
+    "suggestedSummary": "DPA completed. The company called and reached the customer, and arrears were discussed. The customer said her mother had died and the bank had frozen the joint account containing the car money while it processed paperwork, leaving the funds inaccessible; consent was gained to record the bereavement and frozen account. The agent suggested Citizens Advice, which the customer agreed to contact, and applied a fourteen-day contact hold; the customer understood that the hold did not cancel the arrears, and no payment commitment was made. The company will call on 3 November to review access to the funds and what the customer can afford; she can contact the company sooner if the bank provides information.",
+    "model": "gpt-6-luna",
+    "analysedAt": "2026-10-24T10:09:47.744Z",
+    "warnings": []
+  },
+  "human": null,
+  "updatedAt": "2026-10-24T10:09:47.744Z"
+}
