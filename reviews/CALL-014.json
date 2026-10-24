@@ -1,0 +1,46 @@
+{
+  "callId": "CALL-014",
+  "ai": {
+    "recommendation": "needs_correction",
+    "confidence": "high",
+    "overallExplanation": "The summary is otherwise consistent with the call, but it names a private employer despite the redaction rule and omits the customer's expected change in travel costs, which may affect affordability.",
+    "findings": [
+      {
+        "category": "privacy_or_redaction",
+        "severity": "medium",
+        "certainty": "definite",
+        "summaryClaim": "Cedar Lane Distribution",
+        "transcriptEvidence": [
+          {
+            "turnId": "T08",
+            "quote": "I work for Cedar Lane Distribution now.",
+            "verified": true
+          }
+        ],
+        "explanation": "The summary includes the name of the customer's employer. The rubric requires specific private entity names, including employers, to be removed.",
+        "suggestedCorrection": "Replace the employer name with a general reference such as “the new employer”."
+      },
+      {
+        "category": "material_omission",
+        "severity": "medium",
+        "certainty": "definite",
+        "summaryClaim": "",
+        "transcriptEvidence": [
+          {
+            "turnId": "T18",
+            "quote": "Travel will change a bit because the new depot's further away, but I don't know exactly yet.",
+            "verified": true
+          }
+        ],
+        "explanation": "The customer mentioned that travel costs may change because the new depot is further away. This may affect future affordability and should be included without inventing a specific amount.",
+        "suggestedCorrection": "Mention that travel costs may change because the new depot is further away."
+      }
+    ],
+    "suggestedSummary": "No DPA stated with agent. The customer called the company and arrears were discussed. A week between jobs left the customer short this month, and the first pay from the new employer will be for less than a full month; travel costs may change because the new depot is further away. An I&E assessment was planned for the follow-up call, and the customer will prepare income and essential spending figures before calling after work on 28 October to discuss an affordable arrangement.",
+    "model": "gpt-6-luna",
+    "analysedAt": "2026-10-24T10:08:57.035Z",
+    "warnings": []
+  },
+  "human": null,
+  "updatedAt": "2026-10-24T10:08:57.035Z"
+}
