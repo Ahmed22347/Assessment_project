@@ -1,0 +1,36 @@
+{
+  "callId": "CALL-012",
+  "ai": {
+    "recommendation": "needs_correction",
+    "confidence": "high",
+    "overallExplanation": "The summary incorrectly says the father’s Authority to Act was ongoing. The transcript confirms authority for this call only, and the customer explicitly said she did not want him added for future calls.",
+    "findings": [
+      {
+        "category": "third_party_or_authority",
+        "severity": "high",
+        "certainty": "definite",
+        "summaryClaim": "whose ongoing Authority to Act was verified",
+        "transcriptEvidence": [
+          {
+            "turnId": "T08",
+            "quote": "Just while we're on together. I don't need him added for future calls.",
+            "verified": true
+          },
+          {
+            "turnId": "T09",
+            "quote": "Authority to Act is verified for this call only.",
+            "verified": true
+          }
+        ],
+        "explanation": "The summary misstates the scope of the father’s authority, which was limited to this call. This could mislead a colleague about whether he may discuss the account on future calls.",
+        "suggestedCorrection": "State that the father’s Authority to Act was verified for this call only."
+      }
+    ],
+    "suggestedSummary": "DPA completed. The customer called the company with her father, whose Authority to Act was verified for this call only, and arrears were discussed. Missed payments followed a lack of agency shifts in September; the customer is on a zero-hour contract and future shifts remain uncertain. The agent explained the possible credit file impact for the account holder and checked the customer’s understanding. The customer will prepare her payslip, rota and essential expenses for the I&E assessment call requested for 23 October after 3 pm; no payment commitment was made.",
+    "model": "gpt-6-luna",
+    "analysedAt": "2026-10-24T10:08:29.960Z",
+    "warnings": []
+  },
+  "human": null,
+  "updatedAt": "2026-10-24T10:08:29.960Z"
+}
