@@ -1,0 +1,31 @@
+{
+  "callId": "CALL-008",
+  "ai": {
+    "recommendation": "needs_correction",
+    "confidence": "high",
+    "overallExplanation": "The summary accurately captures the call direction, payment commitment and agreed follow-up. However, it states that a default notice had been issued, which is not supported by the transcript.",
+    "findings": [
+      {
+        "category": "unsupported_claim",
+        "severity": "medium",
+        "certainty": "definite",
+        "summaryClaim": "The agent confirmed a default notice had been issued",
+        "transcriptEvidence": [
+          {
+            "turnId": "T07",
+            "quote": "there's a missed payment showing.",
+            "verified": true
+          }
+        ],
+        "explanation": "The agent mentions a missed payment, but the transcript does not mention a default notice or confirm that one was issued.",
+        "suggestedCorrection": "Remove the statement about a default notice."
+      }
+    ],
+    "suggestedSummary": "DPA completed. The customer called the company and arrears were discussed. A job change moved payday from the twenty-fifth to the last Friday of the month, creating a gap before wages arrived. The customer agreed to pay £120 through the portal on 30 October. The customer plans to reset the portal password, and the company will call on 2 November, preferably after 5.30 pm, to discuss the remaining arrears; the customer was asked to contact the company if wages are delayed.",
+    "model": "gpt-6-luna",
+    "analysedAt": "2026-10-24T10:07:28.533Z",
+    "warnings": []
+  },
+  "human": null,
+  "updatedAt": "2026-10-24T10:07:28.533Z"
+}
