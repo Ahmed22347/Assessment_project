@@ -1,0 +1,36 @@
+{
+  "callId": "CALL-009",
+  "ai": {
+    "recommendation": "needs_correction",
+    "confidence": "high",
+    "overallExplanation": "The summary incorrectly says the customer refused an I&E assessment. The customer declined to complete it while at work but agreed to do it the following evening.",
+    "findings": [
+      {
+        "category": "contradiction",
+        "severity": "high",
+        "certainty": "definite",
+        "summaryClaim": "The customer refused an I&E assessment scheduled for 21 October after 6 pm",
+        "transcriptEvidence": [
+          {
+            "turnId": "T12",
+            "quote": "I can do it tomorrow evening when I've got my bank app and the bills in front of me.",
+            "verified": true
+          },
+          {
+            "turnId": "T20",
+            "quote": "Get the bills ready, speak after six tomorrow, and work out what I can actually pay.",
+            "verified": true
+          }
+        ],
+        "explanation": "The customer did not refuse the assessment; they said they could not do it at that moment and agreed to complete it the next evening. Calling this a refusal could mislead a colleague about the customer's willingness to engage.",
+        "suggestedCorrection": "The customer agreed to complete an I&E assessment after 6 pm on 21 October."
+      }
+    ],
+    "suggestedSummary": "DPA completed. The company called and reached the customer; arrears were discussed. Overtime, normally adding about £300 a month, has been stopped until Christmas, reducing the customer's income, and the customer said they could not pay today. The agent attempted to secure payment, but the customer declined; no amount was agreed. The customer agreed to complete an I&E assessment after 6 pm on 21 October and prepare income and essential expense details; potential credit-file impact was explained, and the agent checked the customer's understanding.",
+    "model": "gpt-6-luna",
+    "analysedAt": "2026-10-24T10:07:45.963Z",
+    "warnings": []
+  },
+  "human": null,
+  "updatedAt": "2026-10-24T10:07:45.963Z"
+}
