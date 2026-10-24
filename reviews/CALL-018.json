@@ -1,0 +1,61 @@
+{
+  "callId": "CALL-018",
+  "ai": {
+    "recommendation": "needs_correction",
+    "confidence": "high",
+    "overallExplanation": "The summary incorrectly says the partner’s Authority to Act was verified, when the customer refused permission and the agent confirmed no authority was granted. It also omits the customer’s explicit refusal of an I&E assessment.",
+    "findings": [
+      {
+        "category": "third_party_or_authority",
+        "severity": "high",
+        "certainty": "definite",
+        "summaryClaim": "Authority to Act was verified for the partner",
+        "transcriptEvidence": [
+          {
+            "turnId": "T08",
+            "quote": "No, not the details.",
+            "verified": true
+          },
+          {
+            "turnId": "T22",
+            "quote": "No Authority to Act has been granted to your partner.",
+            "verified": true
+          }
+        ],
+        "explanation": "The customer did not authorise the partner to discuss account details, and the agent explicitly confirmed that no Authority to Act had been granted.",
+        "suggestedCorrection": "State that the partner was not authorised to discuss the account and the agent did not disclose account details to them."
+      },
+      {
+        "category": "advice_or_compliance",
+        "severity": "high",
+        "certainty": "definite",
+        "summaryClaim": "",
+        "transcriptEvidence": [
+          {
+            "turnId": "T14",
+            "quote": "Would you like to go through income and expenditure to see what would be affordable with those reduced hours?",
+            "verified": true
+          },
+          {
+            "turnId": "T15",
+            "quote": "No, I don't want to do that.",
+            "verified": true
+          },
+          {
+            "turnId": "T16",
+            "quote": "Okay, you've declined the assessment.",
+            "verified": true
+          }
+        ],
+        "explanation": "The customer explicitly declined the I&E assessment, which the summary rules require the summary to state.",
+        "suggestedCorrection": "Add that the customer declined an I&E assessment."
+      }
+    ],
+    "suggestedSummary": "DPA completed. The customer called the company with their partner; the partner was not authorised to discuss the account, and the agent did not disclose account details to them. Arrears were discussed. The customer’s hours were reduced from five days to four, reducing monthly income by £220, and they declined an I&E assessment. The customer agreed to pay £75 through the portal on 26 October and to call on 27 October to review the payment and remaining arrears.",
+    "model": "gpt-6-luna",
+    "analysedAt": "2026-10-24T10:09:58.509Z",
+    "warnings": []
+  },
+  "human": null,
+  "updatedAt": "2026-10-24T10:09:58.509Z"
+}
