@@ -1,0 +1,15 @@
+{
+  "callId": "CALL-004",
+  "ai": {
+    "recommendation": "acceptable",
+    "confidence": "high",
+    "overallExplanation": "The summary accurately reflects the call direction, completed DPA, arrears discussion, rent increase, I&E assessment, payment commitment and agreed next steps. No material required information is misstated or omitted.",
+    "findings": [],
+    "suggestedSummary": "",
+    "model": "gpt-6-luna",
+    "analysedAt": "2026-10-24T10:06:41.854Z",
+    "warnings": []
+  },
+  "human": null,
+  "updatedAt": "2026-10-24T10:06:41.854Z"
+}
