@@ -1,0 +1,31 @@
+{
+  "callId": "CALL-011",
+  "ai": {
+    "recommendation": "needs_correction",
+    "confidence": "high",
+    "overallExplanation": "The summary is otherwise accurate, but it omits the required signposting wording: the agent directed the customer to the website support page for MoneyHelper guidance.",
+    "findings": [
+      {
+        "category": "advice_or_compliance",
+        "severity": "medium",
+        "certainty": "definite",
+        "summaryClaim": "",
+        "transcriptEvidence": [
+          {
+            "turnId": "T15",
+            "quote": "Our website has a support page with their contact details and information about getting help.",
+            "verified": true
+          }
+        ],
+        "explanation": "The rubric requires the phrase \"customer signposted\" when the agent advises the customer to visit the company website for help or support. The summary mentions a referral to MoneyHelper but does not state that the customer was signposted to the website support page.",
+        "suggestedCorrection": "State that the customer was signposted to the website support page for free MoneyHelper guidance."
+      }
+    ],
+    "suggestedSummary": "DPA completed; the company called and reached the customer, and arrears were discussed. The customer broke their wrist and is signed off work for another three weeks, with sick pay reducing monthly income by £400; consent gained to record vulnerability. The customer was signposted to the website support page for free MoneyHelper guidance (customer signposted), and the agent applied a fourteen-day hold on collection contact; the customer understood this did not cancel the instalment or arrears. The customer will seek advice and clarify their return-to-work position before the company calls on 3 November to review income and discuss an affordable plan.",
+    "model": "gpt-6-luna",
+    "analysedAt": "2026-10-24T10:08:19.833Z",
+    "warnings": []
+  },
+  "human": null,
+  "updatedAt": "2026-10-24T10:08:19.833Z"
+}
