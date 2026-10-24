@@ -1,0 +1,36 @@
+{
+  "callId": "CALL-013",
+  "ai": {
+    "recommendation": "needs_correction",
+    "confidence": "high",
+    "overallExplanation": "The summary incorrectly states that a payment was made during the call. The customer explicitly said they had not paid anything that day, and the agent confirmed no payment had been taken.",
+    "findings": [
+      {
+        "category": "payment_amount_or_date",
+        "severity": "high",
+        "certainty": "definite",
+        "summaryClaim": "Payment made;",
+        "transcriptEvidence": [
+          {
+            "turnId": "T22",
+            "quote": "I haven't paid anything today.",
+            "verified": true
+          },
+          {
+            "turnId": "T23",
+            "quote": "Correct, no payment has been taken today.",
+            "verified": true
+          }
+        ],
+        "explanation": "The summary records a payment as made, but the transcript confirms that no payment was made or taken during the call. The £60 payment was a future commitment for 23 October.",
+        "suggestedCorrection": "Replace “Payment made” with “No payment was made during the call.”"
+      }
+    ],
+    "suggestedSummary": "DPA completed. The company called and reached the customer, and arrears were discussed. A failed washing machine cost £340, which the customer paid using money reserved for the car instalment. The customer agreed to pay £60 by bank transfer on 23 October using their account reference; no payment was made during the call. The customer understood the arrangement, and the company will call on 27 October after 10 am to review receipt and the remaining arrears.",
+    "model": "gpt-6-luna",
+    "analysedAt": "2026-10-24T10:08:39.623Z",
+    "warnings": []
+  },
+  "human": null,
+  "updatedAt": "2026-10-24T10:08:39.623Z"
+}
