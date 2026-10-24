@@ -1,0 +1,15 @@
+{
+  "callId": "CALL-005",
+  "ai": {
+    "recommendation": "acceptable",
+    "confidence": "high",
+    "overallExplanation": "The summary accurately captures the call direction, completed security, arrears discussion, repair cost, declined payment attempt and agreed follow-up. It does not invent a future payment commitment or omit any materially required information discussed in the call.",
+    "findings": [],
+    "suggestedSummary": "",
+    "model": "gpt-6-luna",
+    "analysedAt": "2026-10-24T10:06:47.613Z",
+    "warnings": []
+  },
+  "human": null,
+  "updatedAt": "2026-10-24T10:06:47.613Z"
+}
