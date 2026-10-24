@@ -1,0 +1,71 @@
+{
+  "callId": "CALL-003",
+  "ai": {
+    "recommendation": "needs_correction",
+    "confidence": "high",
+    "overallExplanation": "The summary incorrectly says the customer consented to recording vulnerability, although they explicitly declined. It also omits the customer’s statement that they had no money for food and includes a prohibited arrears amount.",
+    "findings": [
+      {
+        "category": "vulnerability_or_consent",
+        "severity": "high",
+        "certainty": "definite",
+        "summaryClaim": "Consent gained to record vulnerability.",
+        "transcriptEvidence": [
+          {
+            "turnId": "T09",
+            "quote": "Would you be comfortable with me recording the anxiety on your account, so you don't have to explain it each time?",
+            "verified": true
+          },
+          {
+            "turnId": "T10",
+            "quote": "I'd rather you didn't write the health bit down.",
+            "verified": true
+          }
+        ],
+        "explanation": "The customer declined permission to record the health information, so saying consent was gained is incorrect.",
+        "suggestedCorrection": "The customer reported anxiety but declined permission to record the health information."
+      },
+      {
+        "category": "hardship_detail",
+        "severity": "high",
+        "certainty": "definite",
+        "summaryClaim": "",
+        "transcriptEvidence": [
+          {
+            "turnId": "T08",
+            "quote": "I've got no money for food just now.",
+            "verified": true
+          },
+          {
+            "turnId": "T08",
+            "quote": "My sister brought some shopping yesterday",
+            "verified": true
+          }
+        ],
+        "explanation": "The summary omits the customer’s specific severe hardship: they had no money for food and their sister had brought shopping. The rubric requires these crisis details to be included.",
+        "suggestedCorrection": "Include that the customer said they had no money for food and their sister brought shopping."
+      },
+      {
+        "category": "payment_amount_or_date",
+        "severity": "medium",
+        "certainty": "definite",
+        "summaryClaim": "arrears of £460",
+        "transcriptEvidence": [
+          {
+            "turnId": "T05",
+            "quote": "I can see two missed instalments, with arrears of four hundred and sixty pounds.",
+            "verified": true
+          }
+        ],
+        "explanation": "The summary gives a specific current arrears amount, which the rubric prohibits even though the amount appears in the transcript.",
+        "suggestedCorrection": "Replace with “arrears were discussed.”"
+      }
+    ],
+    "suggestedSummary": "DPA completed. The customer called the company and was reached; arrears were discussed. Their partner moved out at the start of the month and took all the joint savings; the customer is on a zero-hours contract, had two shifts last week and none this week, and said they had no money for food, with their sister bringing shopping. The customer reported anxiety but declined permission to record the health information; the I&E was deferred until their rota is available, the agent explained possible credit file impact, recommended Citizens Advice, and customer signposted to the company website, with the customer confirming their understanding of the plan. A thirty-day hold on collection contact was applied; the customer will seek advice and the company will call on 4 November to review the position and complete the I&E once the customer knows their shifts; no payment was agreed today.",
+    "model": "gpt-6-luna",
+    "analysedAt": "2026-10-24T10:06:36.230Z",
+    "warnings": []
+  },
+  "human": null,
+  "updatedAt": "2026-10-24T10:06:36.230Z"
+}
