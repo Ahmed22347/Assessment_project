@@ -1,0 +1,36 @@
+{
+  "callId": "CALL-002",
+  "ai": {
+    "recommendation": "needs_correction",
+    "confidence": "high",
+    "overallExplanation": "The summary gives the wrong amount for the agreed future payment. The customer settled on £100, not £150.",
+    "findings": [
+      {
+        "category": "payment_commitment",
+        "severity": "high",
+        "certainty": "definite",
+        "summaryClaim": "The customer agreed to pay £150 through the online portal on 23 October",
+        "transcriptEvidence": [
+          {
+            "turnId": "T14",
+            "quote": "It'll have to be a hundred.",
+            "verified": true
+          },
+          {
+            "turnId": "T16",
+            "quote": "Yes, a hundred on the twenty-third. I'll pay through the online portal when the wages are in.",
+            "verified": true
+          }
+        ],
+        "explanation": "The customer explicitly agreed to pay £100 on 23 October through the online portal; £150 was considered but then rejected.",
+        "suggestedCorrection": "The customer agreed to pay £100 through the online portal on 23 October."
+      }
+    ],
+    "suggestedSummary": "DPA completed. The company called and reached the customer, and arrears were discussed. A clutch repair costing £780 used most of the customer’s available funds, while their working hours and wages remained unchanged; the customer declined an I&E assessment. The agent attempted to secure a card payment during the call, but the customer declined; the customer agreed to pay £100 through the online portal on 23 October. Next steps are for the company to call on 26 October after 4 pm to review the remaining arrears, once Friday’s payment has been received.",
+    "model": "gpt-6-luna",
+    "analysedAt": "2026-10-24T10:06:10.034Z",
+    "warnings": []
+  },
+  "human": null,
+  "updatedAt": "2026-10-24T10:06:10.034Z"
+}
