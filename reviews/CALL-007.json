@@ -1,0 +1,15 @@
+{
+  "callId": "CALL-007",
+  "ai": {
+    "recommendation": "acceptable",
+    "confidence": "high",
+    "overallExplanation": "The summary accurately reflects the call direction, completed security, arrears discussion, reason the old Direct Debit remained in place, successful payment, new instruction and agreed next steps. It does not include any prohibited payment or arrears amounts.",
+    "findings": [],
+    "suggestedSummary": "",
+    "model": "gpt-6-luna",
+    "analysedAt": "2026-10-24T10:07:15.259Z",
+    "warnings": []
+  },
+  "human": null,
+  "updatedAt": "2026-10-24T10:07:15.259Z"
+}
