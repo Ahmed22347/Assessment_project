@@ -1,0 +1,36 @@
+{
+  "callId": "CALL-016",
+  "ai": {
+    "recommendation": "needs_correction",
+    "confidence": "high",
+    "overallExplanation": "The summary is otherwise consistent with the call, but it states the amount of a payment made during the call, which the summary rules prohibit.",
+    "findings": [
+      {
+        "category": "payment_amount_or_date",
+        "severity": "medium",
+        "certainty": "definite",
+        "summaryClaim": "Payment of £230 made",
+        "transcriptEvidence": [
+          {
+            "turnId": "T10",
+            "quote": "It's two hundred and thirty pounds, isn't it?",
+            "verified": true
+          },
+          {
+            "turnId": "T14",
+            "quote": "The payment has gone through successfully, and I've received confirmation here.",
+            "verified": true
+          }
+        ],
+        "explanation": "The transcript confirms that a payment was successful, but the rules require payments made during the call to be recorded as “Payment made” without stating the amount.",
+        "suggestedCorrection": "Payment made."
+      }
+    ],
+    "suggestedSummary": "DPA completed. The customer called the company and arrears were discussed. A misunderstanding of the pending and available bank balances left insufficient funds for the Direct Debit. Payment made; the existing Direct Debit remains active with the next collection on 10 November. The customer confirmed understanding; next steps are to retain the emailed payment confirmation, check with the bank how its available balance works, ensure funds are available for the collection and contact the company if anything differs from what was discussed.",
+    "model": "gpt-6-luna",
+    "analysedAt": "2026-10-24T10:09:25.598Z",
+    "warnings": []
+  },
+  "human": null,
+  "updatedAt": "2026-10-24T10:09:25.598Z"
+}
