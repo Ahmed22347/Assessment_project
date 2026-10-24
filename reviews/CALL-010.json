@@ -1,0 +1,31 @@
+{
+  "callId": "CALL-010",
+  "ai": {
+    "recommendation": "needs_correction",
+    "confidence": "high",
+    "overallExplanation": "The summary accurately captures the call direction, DPA, payment commitment, new Direct Debit and next steps. It omits the specific reason for the missed payment: the husband mistakenly cancelled the Direct Debit while moving bills from their joint account during the divorce.",
+    "findings": [
+      {
+        "category": "material_omission",
+        "severity": "medium",
+        "certainty": "definite",
+        "summaryClaim": "",
+        "transcriptEvidence": [
+          {
+            "turnId": "T08",
+            "quote": "We're getting divorced. He cancelled some payments from the joint account when he moved his bills out. He cancelled this one too, by mistake.",
+            "verified": true
+          }
+        ],
+        "explanation": "The rules require the specific cause of non-payment to be included. The summary says arrears were discussed but does not explain that the Direct Debit was mistakenly cancelled during the divorce-related changes to the joint account.",
+        "suggestedCorrection": "Add that, during the divorce, her husband mistakenly cancelled the Direct Debit while moving bills from their joint account."
+      }
+    ],
+    "suggestedSummary": "DPA completed. The customer called the company and arrears were discussed; she explained that, during the divorce, her husband mistakenly cancelled the Direct Debit while moving bills from their joint account. The agent checked affordability and the customer’s understanding, and the customer agreed to pay £205 through the online portal on 27 October. A new Direct Debit instruction was set up for future collections; the next steps are to check the confirmations and contact the company before the payment date if any details differ.",
+    "model": "gpt-6-luna",
+    "analysedAt": "2026-10-24T10:07:59.762Z",
+    "warnings": []
+  },
+  "human": null,
+  "updatedAt": "2026-10-24T10:07:59.762Z"
+}
