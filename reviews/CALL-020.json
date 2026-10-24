@@ -1,0 +1,71 @@
+{
+  "callId": "CALL-020",
+  "ai": {
+    "recommendation": "needs_correction",
+    "confidence": "high",
+    "overallExplanation": "The summary incorrectly states that the customer agreed to pay £80 on 23 October, although the customer explicitly said this was not a promise and only agreed to call that day. It also omits the required specific childcare cost and the agent’s explicit warning that the account remained at risk of further action.",
+    "findings": [
+      {
+        "category": "payment_commitment",
+        "severity": "high",
+        "certainty": "definite",
+        "summaryClaim": "the customer agreed to pay £80 on 23 October",
+        "transcriptEvidence": [
+          {
+            "turnId": "T16",
+            "quote": "Then maybe eighty on Friday. Actually, don't write Friday down as agreed, because I need to check the wages first.",
+            "verified": true
+          },
+          {
+            "turnId": "T22",
+            "quote": "I haven't promised eighty, I've only paid fifty today.",
+            "verified": true
+          }
+        ],
+        "explanation": "The customer explicitly said the possible £80 payment was not agreed and depended on checking wages. The customer agreed to call on 23 October, not to make a payment that day.",
+        "suggestedCorrection": "Remove the claim that the customer agreed to pay £80; state that the customer did not commit to a further payment and agreed to call on 23 October."
+      },
+      {
+        "category": "hardship_detail",
+        "severity": "medium",
+        "certainty": "definite",
+        "summaryClaim": "",
+        "transcriptEvidence": [
+          {
+            "turnId": "T10",
+            "quote": "My youngest needed emergency childcare when the school closed, and that cost two hundred and ten pounds.",
+            "verified": true
+          },
+          {
+            "turnId": "T12",
+            "quote": "Three days, a heating problem.",
+            "verified": true
+          }
+        ],
+        "explanation": "The summary mentions emergency childcare and the school closure but omits the specific £210 cost, which the rubric requires for situational costs affecting ability to pay.",
+        "suggestedCorrection": "Include that emergency childcare during the three-day school closure, caused by a heating problem, cost £210 and left the customer short that month."
+      },
+      {
+        "category": "next_steps",
+        "severity": "high",
+        "certainty": "definite",
+        "summaryClaim": "the agent checked understanding that neither the notice nor all arrears were resolved",
+        "transcriptEvidence": [
+          {
+            "turnId": "T19",
+            "quote": "the account remains at risk of further action",
+            "verified": true
+          }
+        ],
+        "explanation": "The summary does not state the agent’s explicit warning that the account remained at risk of further action. Describing the notice and arrears as unresolved does not capture this required warning.",
+        "suggestedCorrection": "State that the agent warned the customer that the account remained at risk of further action."
+      }
+    ],
+    "suggestedSummary": "DPA completed. The customer called the company; arrears and a default notice were discussed. Emergency childcare during a three-day school closure caused by a heating problem cost £210 and left the customer short that month; the customer declined an I&E assessment today. The agent warned that the account remained at risk of further action, and payment was made. The customer did not commit to a further payment and agreed to call on 23 October after work to review affordability, with income and essential expense figures available if willing to complete the assessment.",
+    "model": "gpt-6-luna",
+    "analysedAt": "2026-10-24T10:10:46.311Z",
+    "warnings": []
+  },
+  "human": null,
+  "updatedAt": "2026-10-24T10:10:46.311Z"
+}
