@@ -1,0 +1,91 @@
+{
+  "callId": "CALL-019",
+  "ai": {
+    "recommendation": "needs_correction",
+    "confidence": "high",
+    "overallExplanation": "The summary gives the wrong call direction, overstates an offer of debt advice as a referral, and states an exact call time that was not agreed. It also omits the customer’s explicit consent to record vulnerability and their lack of spare money for a payment.",
+    "findings": [
+      {
+        "category": "call_direction",
+        "severity": "high",
+        "certainty": "definite",
+        "summaryClaim": "The customer called the company",
+        "transcriptEvidence": [
+          {
+            "turnId": "T01",
+            "quote": "Hello, could I speak to Neil Stone, please? I'm calling from vehicle finance collections.",
+            "verified": true
+          }
+        ],
+        "explanation": "The agent initiated an outbound call to the customer, but the summary says the customer called the company.",
+        "suggestedCorrection": "The company called the customer and reached them."
+      },
+      {
+        "category": "unsupported_claim",
+        "severity": "medium",
+        "certainty": "definite",
+        "summaryClaim": "the customer was referred to StepChange",
+        "transcriptEvidence": [
+          {
+            "turnId": "T17",
+            "quote": "StepChange can provide free debt advice if you'd like wider help with your payments.",
+            "verified": true
+          }
+        ],
+        "explanation": "The agent told the customer that StepChange could provide advice; the transcript does not show a referral being made.",
+        "suggestedCorrection": "StepChange advice was offered."
+      },
+      {
+        "category": "vulnerability_or_consent",
+        "severity": "high",
+        "certainty": "definite",
+        "summaryClaim": "",
+        "transcriptEvidence": [
+          {
+            "turnId": "T10",
+            "quote": "Yes, you can record that.",
+            "verified": true
+          }
+        ],
+        "explanation": "The customer gave permission for the depression and reduced pay to be recorded. The rubric requires the summary to state that consent was gained to record vulnerability.",
+        "suggestedCorrection": "Add: \"Consent gained to record vulnerability.\""
+      },
+      {
+        "category": "material_omission",
+        "severity": "medium",
+        "certainty": "definite",
+        "summaryClaim": "",
+        "transcriptEvidence": [
+          {
+            "turnId": "T12",
+            "quote": "I can still do the food shop this week but I don't have a spare payment sitting there.",
+            "verified": true
+          }
+        ],
+        "explanation": "The summary omits the customer’s stated lack of money available for a payment, which is relevant to their current ability to pay.",
+        "suggestedCorrection": "State that the customer had no spare payment available, although they could manage this week's food shop."
+      },
+      {
+        "category": "next_steps",
+        "severity": "medium",
+        "certainty": "definite",
+        "summaryClaim": "on 23 October at 2 pm",
+        "transcriptEvidence": [
+          {
+            "turnId": "T15",
+            "quote": "We can call on the twenty-third of October after two to complete it.",
+            "verified": true
+          }
+        ],
+        "explanation": "The agreed time was after 2 pm, not specifically at 2 pm.",
+        "suggestedCorrection": "State that the assessment call was arranged for 23 October after 2 pm."
+      }
+    ],
+    "suggestedSummary": "DPA completed. The company called the customer and reached them; a missed instalment and arrears were discussed. The customer has been off sick with depression for about six weeks and is now on sick pay after full pay stopped, reducing income by roughly £500 a month; they have little left to cut and no spare payment available, although they can manage this week's food shop. Consent gained to record vulnerability; StepChange advice was offered and customer signposted to the company website. A seven-day hold on collection contact was applied while the customer seeks advice; the I&E assessment call is arranged for 23 October after 2 pm, with figures to be prepared with the support worker, and the customer understood the hold does not prevent that call or guarantee no credit file impact; no payment was agreed.",
+    "model": "gpt-6-luna",
+    "analysedAt": "2026-10-24T10:10:29.565Z",
+    "warnings": []
+  },
+  "human": null,
+  "updatedAt": "2026-10-24T10:10:29.565Z"
+}
