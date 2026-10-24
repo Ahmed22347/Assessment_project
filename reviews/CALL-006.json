@@ -1,0 +1,31 @@
+{
+  "callId": "CALL-006",
+  "ai": {
+    "recommendation": "needs_correction",
+    "confidence": "medium",
+    "overallExplanation": "The summary accurately captures the call direction, DPA, third-party authority, payment commitment and next steps. However, it generalises the reason for the missed instalment and omits the customer’s specific explanation that they got the new pay dates wrong and did not receive the part payment they had expected last Friday.",
+    "findings": [
+      {
+        "category": "hardship_detail",
+        "severity": "medium",
+        "certainty": "definite",
+        "summaryClaim": "A change from weekly to monthly wages caused the missed instalment.",
+        "transcriptEvidence": [
+          {
+            "turnId": "T12",
+            "quote": "I got the dates wrong, thought I'd get a part payment last Friday and I didn't.",
+            "verified": true
+          }
+        ],
+        "explanation": "The summary includes the change in pay frequency but omits the more specific cause the customer gave: they misjudged the dates and did not receive the part payment they expected. The rubric requires specific causes of non-payment where stated.",
+        "suggestedCorrection": "State that the customer started a new job with monthly rather than weekly pay, got the dates wrong and did not receive the part payment expected last Friday."
+      }
+    ],
+    "suggestedSummary": "DPA completed. The customer called the company with their mother, who is not the account holder; Authority to Act was verified for this call only, and arrears were discussed. The customer started a new job last month, moving from weekly to monthly pay, got the dates wrong and did not receive the part payment expected last Friday. The agent checked affordability and the customer’s understanding; the customer agreed to pay £220 by bank transfer on 30 October using their account reference, with the regular schedule unchanged. The company will review receipt on 2 November and contact the customer if the transfer has not arrived.",
+    "model": "gpt-6-luna",
+    "analysedAt": "2026-10-24T10:07:08.066Z",
+    "warnings": []
+  },
+  "human": null,
+  "updatedAt": "2026-10-24T10:07:08.066Z"
+}
