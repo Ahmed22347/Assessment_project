@@ -1,0 +1,9 @@
+{
+  "_note": "Manually verified against transcripts and summary-rules.txt. Used by check-calls to measure AI agreement; not used by the app.",
+  "CALL-001": { "expected": "acceptable", "why": "Inbound, DPA, payroll-date cause, 'Payment made' without amount, DD date change and next steps all match T01–T21." },
+  "CALL-019": { "expected": "needs_correction", "categories": ["call_direction", "vulnerability_or_consent"], "why": "Outbound call (T01) described as inbound; consent given at T09–T10 but 'Consent gained to record vulnerability' missing." },
+  "CALL-020": { "expected": "needs_correction", "categories": ["payment_commitment"], "why": "Summary says customer agreed to pay £80 on 23 October; T16, T17 and T22 explicitly say this is not a promise. Also omits risk of further action (T19)." },
+  "CALL-015": { "expected": "needs_correction", "categories": ["advice_or_compliance"], "why": "Agent warned of risk of further action (T13); summary omits the mandatory phrase." },
+  "CALL-016": { "expected": "needs_correction", "categories": ["rule_breach"], "why": "States the amount of a payment taken on the call ('Payment of £230 made')." },
+  "CALL-003": { "expected": "needs_correction", "categories": ["rule_breach"], "why": "States the arrears amount (£460), which the rules forbid." }
+}
