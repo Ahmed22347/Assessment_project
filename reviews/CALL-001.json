@@ -3,13 +3,13 @@
   "ai": {
     "recommendation": "acceptable",
     "confidence": "high",
-    "overallExplanation": "The summary accurately reflects the inbound call, completed DPA, reason for the missed payment, successful payment, Direct Debit date change and agreed next steps. It does not state the amount of the payment made during the call or disclose the arrears amount.",
+    "overallExplanation": "The summary accurately reflects the inbound call, completed DPA, reason for the missed payment, successful payment, Direct Debit date change and next collection details. It follows the required wording and does not include the amount of arrears or the amount of the payment made during the call.",
     "findings": [],
     "suggestedSummary": "",
     "model": "gpt-6-luna",
-    "analysedAt": "2026-10-24T10:05:53.434Z",
+    "analysedAt": "2026-10-27T07:38:39.935Z",
     "warnings": []
   },
   "human": null,
-  "updatedAt": "2026-10-24T10:05:53.434Z"
+  "updatedAt": "2026-10-27T07:38:39.935Z"
 }
